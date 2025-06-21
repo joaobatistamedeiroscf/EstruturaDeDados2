@@ -49,7 +49,9 @@ Consolidar o conhecimento prático em estruturas de dados, aprimorar a lógica d
 ## ✍️ Autor
 
 Desenvolvido por João Batista Medeiros Conceição Filho 
+
 Disciplina: Estrutura de Dados 2 
+
 Curso: Ciência da Computação — IFMA
 
 ---
