@@ -129,6 +129,8 @@ int main(){
     raiz = inserir(raiz , 70);
     raiz = inserir(raiz , 20);
 
+    remover(raiz , 30);
+
     
     imprimir(raiz);
   

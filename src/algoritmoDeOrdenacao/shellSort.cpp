@@ -4,8 +4,26 @@
 #include <math.h>
 
 
+void shellSort(int array[], int n) {
+    // Começa com um grande intervalo, depois vai diminuindo
+    for (int gap = n / 2; gap > 0; gap /= 2) {
+        // Faz uma inserção modificada para este gap
+        for (int i = gap; i < n; i++) {
+            int temp = array[i];
+            int j;
 
-void shellSort(int vetor[], int n){
+            // Move elementos que estão à frente do elemento atual
+            for (j = i; j >= gap && array[j - gap] > temp; j -= gap) {
+                array[j] = array[j - gap];
+            }
+
+            array[j] = temp;
+        }
+    }
+}
+
+
+void shellSortK(int vetor[], int n){
      int h = 1  ; 
      
      while(h < n/3){
@@ -53,7 +71,7 @@ int main(){
         printf("FIM!");
         
 
-    shellSort(vetor, tam);
+    shellSortK(vetor, tam);
 
      printf("\nVetor Ordenado usando o shell sort :\n");
     
