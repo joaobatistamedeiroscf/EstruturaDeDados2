@@ -22,8 +22,16 @@ O conteúdo está organizado por tópicos, de acordo com o cronograma da discipl
 - [x] *Busca Binária*
 
 ### 🌳 Árvores Binárias
+- [x] Método inserir 
+- [x] Método buscar
+- [x] 
+- [x] 
+- [x] 
+- [x] 
+- [x] 
 
-- [ ] Em construção
+
+
 
 ## 🛠️ Tecnologias Utilizadas
 

@@ -3,21 +3,27 @@
 #include <time.h>
 
 
+void troca(int *a , int *b){
+    int copia = *a ; 
+    *a = *b ; 
+    *b = copia ; 
+}
 
-void heapify(int *arr,int n,int i ){
+
+void heapify(int *arr,int n,int i){
 //MAX HEAP 
     int maior = i ; 
     
-    int l = 2 * i + 1 ; //filho da esquerda
-    int r = 2 * i + 2 ; // filho da direita 
+    int f_esq = 2 * i + 1 ; //filho da esquerda
+    int f_dir = 2 * i + 2 ; // filho da direita 
 
-    if(l < n && arr[l] > arr[maior])
+    if(f_esq < n && arr[f_esq] > arr[maior])
     {
-        maior = l ; 
+        maior = f_esq ; 
     }
-    if(r < n && arr[r] > arr[maior])
+    if(f_dir < n && arr[f_dir] > arr[maior])
     {
-        maior = r ; 
+        maior = f_dir ; 
     } 
 
     if (maior !=  i){
@@ -31,7 +37,7 @@ void heapify(int *arr,int n,int i ){
 void heapSort(int *arr , int n ){
 
     //Construir a max-heap
-    for(int i = n / 2 -1; i >= 0 ; i --){
+    for(int i = n / 2 - 1; i >= 0 ; i --){
         heapify(arr , n , i ) ; 
     }
 
@@ -66,7 +72,7 @@ int main() {
     printf("Vetor preenchido com numeros aleatorios:\n");
     for (int i = 0; i < tamanho; i++) {
         vetor[i] = rand() % 100;
-        // printf("%d-> ", vetor[i]);
+        
     }
 
     imprimir(vetor , tamanho) ;
