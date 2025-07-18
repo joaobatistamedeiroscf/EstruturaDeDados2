@@ -14,7 +14,7 @@ O conteúdo está organizado por tópicos, de acordo com o cronograma da discipl
 - [x] *Merge Sort*
 - [x] *Quick Sort*
 - [x] *Heap Sort*
-- [ ] *Shell Sort* (em construção)
+- [x] *Shell Sort* (em construção)
 
 ### 🔍 Métodos de Busca (com vetores)
 
